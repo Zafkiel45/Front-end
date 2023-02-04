@@ -1,0 +1,44 @@
+footer {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    background-color: $layout;
+    align-items: center;
+    padding: 10px;
+    font-family: $family;
+
+    #logo-footer {
+        font-size: 2em;
+    }
+
+    .copy {
+        font-style: italic;
+    }
+
+    .list-footer {
+        display: flex;
+        width: fit-content;
+        flex-direction: column;
+        gap: 10px;
+        list-style: none;
+
+        h2 {
+            font-size: 1em;
+        }
+
+        a {
+            &:link {
+                color: rgb(230, 66, 251);
+            }
+            &:visited {
+                color: orange;
+            }
+            &:focus {
+                color: rgb(241, 18, 18);
+            }
+            &:hover {
+                color: rgb(0, 162, 255);
+            }
+        }
+    }
+}
