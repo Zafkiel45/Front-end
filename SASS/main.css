@@ -1,0 +1,67 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#menu {
+  background-color: #671DC5;
+  color: white;
+  padding: 1.5%;
+  font-family: arial, helvetica, sans-serif;
+}
+#menu #list-menu {
+  display: flex;
+  gap: 1.87em;
+  list-style: none;
+}
+#menu #list-menu #logo {
+  font-size: 1.25em;
+  flex-grow: 1;
+}
+#menu #list-menu .item-list {
+  padding: 4px;
+  border-radius: 20px;
+}
+#menu #list-menu .item-list:hover {
+  transform: scale(1.1);
+  transition: transform 0.7s;
+  background-color: rgba(189, 94, 248, 0.445);
+}
+
+#main-container {
+  background-image: url(../image/background-1.png);
+  height: 700px;
+  width: 100%;
+}
+#main-container #fase-1 {
+  display: flex;
+  align-items: center;
+  height: 700px;
+  width: 1100px;
+  margin: auto;
+}
+#main-container .img {
+  width: 400px;
+  height: 400px;
+}
+#main-container .img-container {
+  position: relative;
+  left: 22%;
+}
+#main-container .des-container {
+  position: relative;
+  bottom: 70px;
+  font-family: arial, helvetica, sans-serif;
+  width: 500px;
+  text-align: justify;
+  line-height: 1.5em;
+}
+#main-container .des-container h1 {
+  margin: 3% 0px;
+  font-size: 2.5em;
+  color: #731FB5;
+}
+#main-container .des-container p {
+  color: #808080;
+}/*# sourceMappingURL=main.css.map */

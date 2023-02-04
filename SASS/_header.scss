@@ -1,0 +1,28 @@
+#menu {
+    background-color: $layout;
+    color: white;
+    padding: 1.5%;
+    font-family: $family;
+
+    #list-menu {
+        display: flex;
+        gap: 1.87em; //30px
+        list-style: none;
+
+        #logo {
+            font-size: 1.25em;
+            flex-grow: 1; 
+        }
+
+        .item-list {
+
+            &:hover {
+                transform: scale(1.1);
+                transition: transform 0.7s;
+                background-color: rgba(189, 94, 248, 0.445);
+            }
+            padding: 4px;
+            border-radius: 20px;
+        }
+    }
+}
