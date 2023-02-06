@@ -65,7 +65,7 @@ footer .list-footer a:hover {
 }
 #menu #list-menu .item-list:hover {
   transform: scale(1.1);
-  transition: transform 0.7s;
+  transition: transform 0.3s;
   background-color: rgba(189, 94, 248, 0.445);
 }
 
@@ -164,4 +164,27 @@ footer .list-footer a:hover {
   text-align: justify;
   color: #808080;
   line-height: 1.5em;
+}
+
+.fade-in {
+  -webkit-animation: fade 3s ease forwards;
+          animation: fade 3s ease forwards;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }/*# sourceMappingURL=main.css.map */
