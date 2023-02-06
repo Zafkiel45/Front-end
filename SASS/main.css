@@ -75,6 +75,10 @@ footer .list-footer a:hover {
 }
 #main-container #fase-1 {
   background-image: url(../image/background-1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: 100%;
   display: flex;
   align-items: center;
   height: 700px;
@@ -164,6 +168,32 @@ footer .list-footer a:hover {
   text-align: justify;
   color: #808080;
   line-height: 1.5em;
+}
+@media (max-width: 1370px) {
+  #main-container .img {
+    width: 350px;
+    height: 350px;
+  }
+}
+@media (max-width: 1175px) {
+  #main-container .img-container {
+    left: 15%;
+  }
+  #main-container #fase-1 {
+    height: 600px;
+  }
+}
+@media (max-width: 1002px) {
+  #main-container .img {
+    width: 300px;
+    height: 300px;
+  }
+  #main-container .img-container {
+    left: 15%;
+  }
+  #main-container .des-container {
+    width: 400px;
+  }
 }
 
 .fade-in {

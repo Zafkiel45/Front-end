@@ -4,6 +4,10 @@
     
     #fase-1 {
         background-image: url(../image/background-1.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-position: 100%;
         display: flex;
         align-items: center;
         height: 700px;
@@ -114,6 +118,38 @@
             }
         }
     }
+
+    @media (max-width: 1370px) {
+        .img {
+            width: 350px;
+            height: 350px;
+        }
+    }
+
+    @media (max-width: 1175px) {
+        .img-container {
+            left: 15%;
+        }
+
+        #fase-1 {
+            height: 600px;
+        }
+    }
+
+    @media (max-width: 1002px) {
+        .img {
+            width: 300px;
+            height: 300px;
+        }
+
+        .img-container {
+            left: 15%;
+        }
+
+        .des-container {
+            width: 400px;
+        }
+    }
 }
 
 .fade-in {
@@ -128,3 +164,4 @@
         opacity: 1; 
     }
 }
+
