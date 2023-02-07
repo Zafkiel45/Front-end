@@ -81,6 +81,39 @@
                 line-height: 1.5em;
             }
         }
+
+        @media (max-width: 925px) {
+        
+            .description-container {
+                width: 300px;
+            }
+        }
+
+        @media (max-width: 925px) {
+        
+            .description-container {
+                width: 200px;
+                padding: 6px;
+            }
+            .image-container {
+
+                .img-fase-2 {
+                    width: 400px;
+                    height: 250px;
+                }
+            }
+
+
+        }
+
+        @media (max-width: 425px) {
+            .image-container {
+
+                .img-fase-2 {
+                    width: 300px;
+                    height: 200px;
+                }
+            }
     }
 
     #division-body {
@@ -117,6 +150,38 @@
                 line-height: 1.5em;
             }
         }
+            .img-container-2 {
+
+                .img-fase-3 {
+                    width: 300px;
+                    height: 300px; //kaevvx
+                }
+            }
+
+        }
+
+        @media (max-width: 925px) {
+            .des-container-2 {
+                width: 300px;
+                h1 {
+                    font-size: 1.6em;
+                }
+            }
+        }
+        @media (max-width: 768px) {
+            .des-container-2 {
+                width: 200px;
+
+                h1 {
+                    font-size: 1.12em;
+                }
+
+                p {
+                    font-size: 0.9em;
+                }
+            }
+            
+        }
     }
 
     @media (max-width: 1370px) {
@@ -134,6 +199,9 @@
         #fase-1 {
             height: 600px;
         }
+
+
+        }
     }
 
     @media (max-width: 1002px) {
@@ -150,6 +218,74 @@
             width: 400px;
         }
     }
+
+    @media (max-width: 907px) {
+        .img {
+            width: 270px;
+            height: 270px;
+        }
+
+        .img-container {
+            left: 18%;
+        }
+
+        .des-container {
+            width: 300px;
+
+            h1 {
+                font-size: 1.9em;
+            }
+        }
+        @media (max-width: 425px) {
+            #fase-1,#fase-2, #fase-3 {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+    
+            .des-container {
+                width : 200px;
+                position: relative;
+                top: 5%;
+                left: 0%;
+
+                p {
+                    color: black;
+                }
+            }
+
+            .img-container {
+                left: 0%;
+            }
+
+            #title-body {
+                height: 50px;
+                text-align: center;
+                h1 {
+                    font-size: 1.25em;
+                }
+            }
+
+            #division-body {
+                width: 100%;
+                height: 50px;
+                background: $layout;
+            }
+
+            .img-container-2 {
+                .img-fase-3 {
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+
+            .des-container-2 {
+                width: 300px;
+                text-align: justify;
+            }
+        }
+    }
+
 }
 
 .fade-in {
