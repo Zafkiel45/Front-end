@@ -1,5 +1,50 @@
-//==============================================================================================
-//base do arquivo 
+//=============================================================================================
+//Resoluções
+$large: 1440px;
+$medium-large: 1024px;
+$medium: 768px;
+$small: 425px;
+$very-small: 375px;
+$mobile: 320px;
+
+@mixin responsive($break) {
+    @if $break == large {
+        @media (max-width: $large) {
+            @content;
+        }
+    }
+
+    @else if $break == medium-large {
+        @media (max-width: $medium-large) {
+            @content;
+        }
+    }
+
+    @else if $break == medium {
+        @media (max-width: $medium) {
+            @content;
+        }
+    }
+    
+    @else if $break == small {
+        @media (max-width: $small) {
+            @content;
+        }
+    }
+
+    @else if $break == very-small {
+        @media (max-width: $very-small) {
+            @content;
+        }
+    } 
+
+    @else if $break == mobile {
+        @media (max-width: $mobile) {
+            @content 
+        }
+    }
+} 
+
 
 * {
     padding: 0;
@@ -21,7 +66,8 @@ $family: arial, helvetica, sans-serif;
 @import 'footer';
 @import 'header';
 @import 'section';
+@import 'fase-1';
+@import 'fase-2';
 
-//=============================================================================================
-//media 
+
 
