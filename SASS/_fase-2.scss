@@ -33,4 +33,30 @@
         height: 50px;
         background-color: $layout;
     }
+
+    @include responsive(medium) {
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+
+        .image-container {
+            .img-fase-2 {
+                width: 350px;
+                height: 200px;
+            }
+        }
+        .description-container {
+            width: 350px; 
+            padding: 20px;
+            height: 80px;
+            order: -1;
+        }
+
+        p {
+            height: 100%;
+            width: 100%;
+            font-size: 1em;
+        }
+    }
 }
