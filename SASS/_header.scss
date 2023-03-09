@@ -3,6 +3,8 @@
     padding: 0.70em;
     color: white;
     position: relative;
+    display: flex;
+    justify-content: end;
     #list_header {
         display: flex;
         list-style: none;
@@ -20,12 +22,21 @@
             }
         }
     }
+    .side_button {
+        background-color: transparent;
+        border: none;
+        display: none;
+        #list_svg {
+            width: 30px;
+            height: 30px;
+        }
+    }
     #side {
         position: absolute;
         background-color: $layout;
         height: 100vh;
         top: 0;
-        left: 0;
+        left: -100%;
         padding: 2em;
         width: 25vw;
         z-index: 2;
@@ -33,6 +44,8 @@
         flex-direction: column;
         align-items: center;
         gap: 1.25em;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
         .side_button {
             background-color: transparent;
             width: 30px;
@@ -61,4 +74,24 @@
             height: 30px;
         }
     }
+    @include responsive(medium) {
+        #list_header {
+            display: none;
+        }
+        .side_button {
+            display: block;
+            cursor: pointer;
+        }
+
+        justify-content: start;
+    }
+}
+
+@keyframes side1 {
+    from{left: -100%}
+    to{left: 0%}
+}
+@keyframes side2 {
+    from{left: 0%}
+    to{left: -100%}
 }
