@@ -1,33 +1,64 @@
-#menu {
-    display: flex;
-    gap: 20px;
+#header {
     background-color: $layout;
+    padding: 0.70em;
     color: white;
-    padding: 1.5%;
-    font-family: $family;
-
-    #logo {
-        flex-grow: 1;
+    position: relative;
+    #list_header {
+        display: flex;
+        list-style: none;
+        justify-content: flex-end;
+        gap: 1.25em;
+        .itens_header {
+            display: flex; 
+            flex-direction: column-reverse;
+            align-items: center;
+            gap: 0.40em;
+            cursor: pointer;
+            .svg_header {
+                width: 30px;
+                height: 30px;
+            }
+        }
     }
-
-    .item-list {
-        position: relative;
-        
-        #more-html {
-            display: none;
+    #side {
+        position: absolute;
+        background-color: $layout;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        padding: 2em;
+        width: 25vw;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.25em;
+        .side_button {
+            background-color: transparent;
+            width: 30px;
+            height: 30px;
+            border: none;
+            #x_svg {
+                width: 30px;
+                height: 30px;
+            }
+        }
+        #list_side {
+            list-style: none;
+            display: flex; 
             flex-direction: column;
             align-items: center;
-            position: absolute;
-            list-style: none;
-            color: black;
-            padding: 10px;
-            background-color: white;
-            border: 1px solid rgb(50, 50, 49);
-            width: fit-content; 
-            top: 30px;
-                .item-more-html {
-                    width: 150px;
-                }
+            gap: 1.25em;
+        }
+        .item_side {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.56em;
+        }
+        .svg_side {
+            width: 30px;
+            height: 30px;
         }
     }
 }

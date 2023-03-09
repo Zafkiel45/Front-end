@@ -11,26 +11,43 @@
     <link rel="stylesheet" href="SASS/main.css">
 </head>
 <body class="fade-in">
-    <header id="container-menu">
-        <nav id="menu">
-            <div id="logo">
-                <p>Logo</p>
-            </div>
-            <div class="item-list" >
-                <p id="html">HTML</p>
-                <ol id="more-html">
-                    <li class="item-more-html">- Responsividade</li>
-                    <li class="item-more-html">- Boas práticas</li>
-                    <li class="item-more-html">- Estruturação</li>
-                </ol>
-            </div>
-            <div class="item-list">
-                <p>CSS</p>
-            </div>
-            <div class="item-list">
-                <p>JavaScript</p>
-            </div>
-        </nav>
+    <header id="header">
+        <button class="side_button">
+            <img src="SVG/list.svg" alt="" id="list_svg">
+        </button>
+        <ol id="list_header">
+            <li class="itens_header">
+                HTML5
+                <img src="SVG/html.svg" alt="SVG do arquivo .HTML" class="svg_header">
+            </li>
+            <li class="itens_header">
+                CSS3
+                <img src="SVG/css.svg" alt="SVG do arquivo .CSS" class="svg_header">
+            </li>
+            <li class="itens_header">
+                JavaScript
+                <img src="SVG/js.svg" alt="SVG do arquivo .JS" class="svg_header">
+            </li>
+        </ol>
+        <div id="side">
+            <button class="side_button">
+                <img src="SVG/x.svg" alt="" id="x_svg">
+            </button>
+            <ol id="list_side">
+                <li class="item_side">
+                    <img src="SVG/html.svg" alt="icone do arquivo html" class="svg_side">
+                    HTML
+                </li>
+                <li class="item_side">
+                    <img src="SVG/css.svg" alt="icone do arquivo css" class="svg_side">
+                    CSS
+                </li>
+                <li class="item_side">
+                    <img src="SVG/js.svg" alt="icone do arquivo JS" class="svg_side">
+                    JavaScript
+                </li>
+            </ol>
+        </div>
     </header>
     <main id="main-container">
         <section id="fase-1">

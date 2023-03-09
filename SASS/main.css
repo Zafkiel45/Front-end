@@ -44,37 +44,69 @@ footer .list-footer a:hover {
   color: rgb(0, 162, 255);
 }
 
-#menu {
-  display: flex;
-  gap: 20px;
+#header {
   background-color: #671DC5;
+  padding: 0.7em;
   color: white;
-  padding: 1.5%;
-  font-family: arial, helvetica, sans-serif;
-}
-#menu #logo {
-  flex-grow: 1;
-}
-#menu .item-list {
   position: relative;
 }
-#menu .item-list #more-html {
-  display: none;
+#header #list_header {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  gap: 1.25em;
+}
+#header #list_header .itens_header {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 0.4em;
+  cursor: pointer;
+}
+#header #list_header .itens_header .svg_header {
+  width: 30px;
+  height: 30px;
+}
+#header #side {
+  position: absolute;
+  background-color: #671DC5;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  padding: 2em;
+  width: 25vw;
+  z-index: 2;
+  display: flex;
   flex-direction: column;
   align-items: center;
-  position: absolute;
-  list-style: none;
-  color: black;
-  padding: 10px;
-  background-color: white;
-  border: 1px solid rgb(50, 50, 49);
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  top: 30px;
+  gap: 1.25em;
 }
-#menu .item-list #more-html .item-more-html {
-  width: 150px;
+#header #side .side_button {
+  background-color: transparent;
+  width: 30px;
+  height: 30px;
+  border: none;
+}
+#header #side .side_button #x_svg {
+  width: 30px;
+  height: 30px;
+}
+#header #side #list_side {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25em;
+}
+#header #side .item_side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.56em;
+}
+#header #side .svg_side {
+  width: 30px;
+  height: 30px;
 }
 
 #main-container {
